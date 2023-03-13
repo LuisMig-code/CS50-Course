@@ -1,0 +1,19 @@
+body{
+    background-color: #a8ddff;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+.centered {
+    text-align: center;
+}
+.large {
+    font-size: large;
+}
+
+.medium {
+    font-size:medium;
+}
+
+.small {
+    font-size:small;
+}

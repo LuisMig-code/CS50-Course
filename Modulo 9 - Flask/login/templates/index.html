@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    {% if session.name %}
+        <h1>Nice!</h1>
+        <p>You are logged in.</p>
+        <a href="/logout">Log out</a>
+    {% else %}
+        <h1>Well...</h1>
+        <p>You are not logged in.</p>
+        <a href="/login">Log in</a>
+    {% endif %}
+
+{% endblock %}

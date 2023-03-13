@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <h1>Register</h1>
+
+    <form action="/register" method="post">
+
+        <input name="name" type="text" autocomplete="off" autofocus placeholder="Name" class="input-default">
+        <br>
+        <br>
+        <input name="email" type="email" autocomplete="off" placeholder="Email" class="input-default">
+        <br>
+        <br>
+            {% for club in clubs%}
+                <input name="club" type="radio" value="{{club}}">{{club}}
+            {%endfor %}
+        <input type="submit" value="Register">
+
+    </form>
+
+{% endblock %}

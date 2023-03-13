@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <script>
+            
+            
+            
+            document.addEventListener('DOMContentLoaded' , function() {
+                document.querySelector("form").addEventListener('submit' , function() {
+                    let name = document.querySelector("#name").value;
+                    alert("Hello , " + name);
+                } 
+                );
+            }
+            );
+            
+            
+        </script>
+        
+        <title>Hello 2 , Title!</title>
+    </head>
+
+    <body>
+       <form >
+           <input id="name" type="text" placeholder="Your name" autofocus>
+           <input type="submit" value="Greet me">
+       </form>
+    </body>
+</html>
